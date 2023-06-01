@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .page{
+        display: grid;
+        grid-template-areas:'left right right right';
+        background-color: rgb(165, 195, 68);
+        height: 50vh;
+    }
+    .left{
+        grid-area: left;
+    }
+    .right{
+        grid-area: right;
+        color:rgb(95, 10, 39);
+    }
+    .left li{
+        list-style-type: none;
+        padding: 5px 20px;
+        margin:10px 0px;
+        border-right:15px solid #000;
+        width: 10vw;
+        background-color: #fff;
+        color:blue;
+    }
+    .left li:hover{
+        color: rgb(150, 6, 54);
+    }
+    .right hr{
+        color:rgb(150, 6, 54);
+    }
+    
+    .page2{
+        display: grid;
+        grid-template-areas: 'ft sd td' 'fh ff sh' 'sv et nh';
+        width:30vw;
+    }
+    .ft{
+        grid-area: 'ft';
+        width:100px;
+        height: 80px;
+        border: 3px solid #6abd05;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    .sd{
+        grid-area: 'sd';
+        width:100px;
+        height: 80px;
+        border: 3px solid #6abd05;
+        border-radius: 10px;
+    }
+    .td{
+        grid-area: 'td';
+        width:100px;
+        height: 80px;
+        border: 3px solid #6abd05;
+        border-radius: 30px;
+    }
+    .fh{
+        grid-area: 'fh';
+        width:100px;
+        height: 80px;
+        border: 3px solid #6abd05;
+        border-radius: 30px;
+        margin-bottom: 15px;
+    
+    }
+    .ff{
+        grid-area: 'ff';
+        width:100px;
+        height: 80px;
+        border: 3px solid #6abd05;
+        border-radius: 15px;
+    
+    }
+    
+    .sh{
+        grid-area: 'sh';
+        width:100px;
+        height: 80px;
+        border: 3px solid #6abd05;
+        border-radius: 30px;
+    
+    }
+    .sv{
+        grid-area: 'sv';
+        width:100px;
+        height: 80px;
+        border: 3px solid #6abd05;
+        border-radius: 20%;
+        margin-bottom: 15px;
+    
+    }
+    .et{
+        grid-area: 'et';
+        width:100px;
+        height: 80px;
+        border: 3px solid #6abd05;
+        border-radius: 20px;
+    
+    }
+    .nh{
+        grid-area: 'nh';
+        width:100px;
+        height: 80px;
+        border: 3px solid #6abd05;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 30%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .outer{
+        border: 3px solid #000;
+        width:30vw;
+        height:11vh;
+    }
+    .inner{
+        margin:20px 20px;
+        background-color: rgb(240, 216, 5);
+    }
+</style>
+<body>
+    <div class="page2">
+        <div class="ft"></div>
+        <div class="sd"></div>
+        <div class="td"></div>
+
+        <div class="fh"></div>
+        <div class="ff"></div>
+        <div class="sh"></div>
+
+        <div class="sv"></div>
+        <div class="et"></div>
+        <div class="nh"></div>
+    </div>
+</body>
+</html>
